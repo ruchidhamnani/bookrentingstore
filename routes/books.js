@@ -7,7 +7,9 @@ let utils = require('../controllers/api')
 //get totalcount of books
 router.get('/totalcount', (req, res) => {
     utils.Totalbookcount().then(result => {
-        res.json({ status: 200, totalcount: result, error: null });
+        // res.send({ status: 200, totalcount: result, error: null });
+        res.setHeader('Content-Type','application/json')
+        res.json(result);
     });
 
 
@@ -19,7 +21,9 @@ router.get('/totalcount', (req, res) => {
 router.get('/findbyauthor/:authorname', (req, res) => {
     let authorname = req.params.authorname
     utils.FindByAuthor(authorname).then(result => {
-        res.json({ status: 200, result: result, error: null });
+        // res.json({ status: 200, result: result, error: null });
+        res.send(result[0].bookname);
+
     });
 
 
@@ -52,7 +56,7 @@ router.get('/findbygenre/:genre', (req, res) => {
 //get all the rented books
 router.get('/rentedcount', (req, res) => {
     utils.TotalRentedBooks().then(result => {
-        res.send({ 'result': result });
+        res.send(result);
 
     });
 });

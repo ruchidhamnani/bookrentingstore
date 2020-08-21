@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1597997727921" clover="3.2.0">
+  <project timestamp="1597997727921" name="All files">
+    <metrics statements="190" coveredstatements="101" conditionals="28" coveredconditionals="3" methods="50" coveredmethods="12" elements="268" coveredelements="116" complexity="0" loc="190" ncloc="190" packages="5" files="8" classes="8"/>
+    <package name="bookrentingstore">
+      <metrics statements="28" coveredstatements="23" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="app.js" path="C:\Users\Ruchi\Desktop\bookrentingstore\app.js">
+        <metrics statements="28" coveredstatements="23" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="40" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="bookrentingstore.controllers">
+      <metrics statements="87" coveredstatements="28" conditionals="24" coveredconditionals="3" methods="26" coveredmethods="6"/>
+      <file name="api.js" path="C:\Users\Ruchi\Desktop\bookrentingstore\controllers\api.js">
+        <metrics statements="87" coveredstatements="28" conditionals="24" coveredconditionals="3" methods="26" coveredmethods="6"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="39" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="57" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="78" count="0" type="stmt"/>
+        <line num="79" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="87" count="0" type="stmt"/>
+        <line num="89" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="90" count="0" type="stmt"/>
+        <line num="93" count="0" type="stmt"/>
+        <line num="94" count="0" type="stmt"/>
+        <line num="95" count="0" type="stmt"/>
+        <line num="96" count="0" type="stmt"/>
+        <line num="97" count="0" type="stmt"/>
+        <line num="98" count="0" type="stmt"/>
+        <line num="99" count="0" type="stmt"/>
+        <line num="100" count="0" type="stmt"/>
+        <line num="101" count="0" type="stmt"/>
+        <line num="102" count="0" type="stmt"/>
+        <line num="106" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="108" count="0" type="stmt"/>
+        <line num="113" count="1" type="stmt"/>
+        <line num="114" count="1" type="stmt"/>
+        <line num="115" count="1" type="stmt"/>
+        <line num="116" count="1" type="stmt"/>
+        <line num="117" count="1" type="stmt"/>
+        <line num="121" count="1" type="stmt"/>
+        <line num="122" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="124" count="3" type="stmt"/>
+        <line num="125" count="1" type="stmt"/>
+        <line num="127" count="1" type="stmt"/>
+        <line num="129" count="1" type="stmt"/>
+        <line num="131" count="1" type="stmt"/>
+        <line num="133" count="1" type="stmt"/>
+        <line num="142" count="0" type="stmt"/>
+        <line num="143" count="0" type="stmt"/>
+        <line num="144" count="0" type="stmt"/>
+        <line num="145" count="0" type="stmt"/>
+        <line num="146" count="0" type="stmt"/>
+        <line num="147" count="0" type="stmt"/>
+        <line num="148" count="0" type="stmt"/>
+        <line num="149" count="0" type="stmt"/>
+        <line num="150" count="0" type="stmt"/>
+        <line num="151" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="154" count="0" type="stmt"/>
+        <line num="161" count="0" type="stmt"/>
+        <line num="162" count="0" type="stmt"/>
+        <line num="163" count="0" type="stmt"/>
+        <line num="164" count="0" type="stmt"/>
+        <line num="165" count="0" type="stmt"/>
+        <line num="168" count="0" type="stmt"/>
+        <line num="169" count="0" type="stmt"/>
+        <line num="170" count="0" type="stmt"/>
+        <line num="171" count="0" type="stmt"/>
+        <line num="179" count="0" type="stmt"/>
+        <line num="180" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="182" count="0" type="stmt"/>
+        <line num="185" count="0" type="stmt"/>
+        <line num="190" count="0" type="stmt"/>
+        <line num="191" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="193" count="0" type="stmt"/>
+        <line num="196" count="0" type="stmt"/>
+        <line num="200" count="0" type="stmt"/>
+        <line num="201" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="203" count="0" type="stmt"/>
+        <line num="206" count="0" type="stmt"/>
+        <line num="215" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="bookrentingstore.db">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="db.js" path="C:\Users\Ruchi\Desktop\bookrentingstore\db\db.js">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="bookrentingstore.models.schema">
+      <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="book.js" path="C:\Users\Ruchi\Desktop\bookrentingstore\models\schema\book.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+      </file>
+      <file name="order.js" path="C:\Users\Ruchi\Desktop\bookrentingstore\models\schema\order.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="bookrentingstore.routes">
+      <metrics statements="57" coveredstatements="32" conditionals="0" coveredconditionals="0" methods="22" coveredmethods="6"/>
+      <file name="books.js" path="C:\Users\Ruchi\Desktop\bookrentingstore\routes\books.js">
+        <metrics statements="23" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="4"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="69" count="1" type="stmt"/>
+      </file>
+      <file name="orders.js" path="C:\Users\Ruchi\Desktop\bookrentingstore\routes\orders.js">
+        <metrics statements="16" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+      </file>
+      <file name="updates.js" path="C:\Users\Ruchi\Desktop\bookrentingstore\routes\updates.js">
+        <metrics statements="18" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

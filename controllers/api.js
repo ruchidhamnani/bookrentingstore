@@ -27,7 +27,7 @@ const utils = {
             if (err) return handleError(err);
         });
         return finalresult[0]['total'];
-        
+
     },
 
     FindByAuthor: async function (authorname) {
@@ -82,7 +82,7 @@ const utils = {
     },
 
 
-    AvailabilityCheck: async function (nameofbook) {
+    TwoAvailabilityCheck: async function (nameofbook) {
         var finalresult
         await booksSchema.find({ $and: [{ bookname: nameofbook }, { availableCopies: { $gte: 1 } }] }, async function (err, result) {
 
@@ -108,6 +108,34 @@ const utils = {
         return finalresult;
     },
 
+    AvailabilityCheck: async function (bookIdentifier) {
+        //from orders get last 14 days orders of a bookId, populate bookId with ref to bookSchema
+        var currD = ((new Date()));
+        currD.setDate(currD.getDate() - 14);
+        var s = JSON.stringify(currD);
+        var currD_ = s.slice(1, 11);
+        const allorders = await ordersModel
+            .find({ $and: [{ bookId: bookIdentifier }, { doi: { $gte: currD_ } }] })
+            .populate('bookId')
+
+        let x = allorders[0].bookId.totalQuantity;
+        if (x != allorders.length) { return 0; }
+        else {
+            let dates = allorders.map(item => item.doi);
+            dates.sort();
+
+            var doi = new Date((JSON.stringify(dates[0])).slice(1, 11));
+
+            var currD = new Date((JSON.stringify(new Date())).slice(1, 11));
+
+            var diff = 14 - ((currD - doi) / 86400000);
+
+            return diff;
+        }
+
+
+    },
+
 
     BooksRentedByaCustomer: async function (customerIdentifier) {
         var finalresult
@@ -127,20 +155,27 @@ const utils = {
 
 
     },
-    //two async functions
+    //give customerID and find all orders placed by it in last 100 days
+    //bookID field is already populated extract price from it
     MoneySpentByUser: async function (customerIdentifier) {
-        var finalresult
         var currD = ((new Date()));
         currD.setDate(currD.getDate() - 100);
         var s = JSON.stringify(currD);
         var currD_ = s.slice(1, 11);
-        const result = await ordersModel.find({ $and: [{ customerId: customerIdentifier }, { doi: { $gte: currD_ } }] }).populate('bookId')
-        return result;
+        const allorders = await ordersModel
+            .find({ $and: [{ customerId: customerIdentifier }, { doi: { $gte: currD_ } }] })
+            .populate('bookId')
+        let finalresult = allorders
+            .map(item => item.bookId.price)
+            .reduce((totalSum, curr) => { return totalSum + curr; }, 0);
+        return finalresult;
+
+
     },
 
 
     UpdatePrice: async function (newprice, bookname) {
-        
+
         await booksSchema.update({ 'bookname': bookname }, { $set: { 'price': newprice } }, function (err, b) {
             if (err) finalresult = "error";
             else {
@@ -150,30 +185,30 @@ const utils = {
         return finalresult;
     },
 
-    UpdateGenre: async function (newgenre, bookname){
+    UpdateGenre: async function (newgenre, bookname) {
 
-        await booksSchema.update({'bookname' : bookname}, {$set : {'genre' : newgenre}}, function(err,b){
-           if(err) finalresult ="error";
-           else{
-            finalresult ="Successfully Updated genre";
-           }
-       })
-       return finalresult;
-   },
+        await booksSchema.update({ 'bookname': bookname }, { $set: { 'genre': newgenre } }, function (err, b) {
+            if (err) finalresult = "error";
+            else {
+                finalresult = "Successfully Updated genre";
+            }
+        })
+        return finalresult;
+    },
 
-   RemoveBook : async function(bookname){
-    await booksSchema.findOneAndRemove({'bookname' : bookname}, {}, function(err,b){
-        if(err) finalresult ="error";
-        else{
-            finalresult ="removed the book";
-        }
-    })
-    return finalresult;
-   }
+    RemoveBook: async function (bookname) {
+        await booksSchema.findOneAndRemove({ 'bookname': bookname }, {}, function (err, b) {
+            if (err) finalresult = "error";
+            else {
+                finalresult = "removed the book";
+            }
+        })
+        return finalresult;
+    }
 
 }
 
-  
+
 
 
 

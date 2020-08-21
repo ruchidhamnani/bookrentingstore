@@ -7,10 +7,10 @@ let utils = require('../controllers/api')
 //sort by date the documents in orderinformation collection havving this bookname and pick the date which is oldest doi.
 //todays date - doi > 14 => response 0, otherwise 14 - (today's date -doi)
 
-router.get('/availabilitycheck/:bookname', (req, res) => {
-    let nameofbook = req.params.bookname
-    utils.AvailabilityCheck(nameofbook).then(result => {
-        res.send({'result' : result});
+router.get('/availabilitycheck/:bookId', (req, res) => {
+    let bookIdentifier = req.params.bookId
+    utils.AvailabilityCheck(bookIdentifier).then(result => {
+        res.json( result);
     });
 
 
